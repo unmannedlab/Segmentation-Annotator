@@ -48,6 +48,8 @@ Download the [SAM checkpoint](https://dl.fbaipublicfiles.com/segment_anything/sa
 
 3. Save your annotations and export the annotated image.
 
+## Custom Dataset
+To annotate your custom dataset with your own custom labels, please refer to custom_annotations_readme.md
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. 
