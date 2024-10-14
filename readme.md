@@ -50,7 +50,9 @@ Download the [SAM checkpoint](https://dl.fbaipublicfiles.com/segment_anything/sa
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. 
+
+### We will release a new update with the integration of SAM 2 for faster and video segmentation. Stay tuned!
 
 ## License
 
