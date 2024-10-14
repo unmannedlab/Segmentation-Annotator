@@ -14,3 +14,7 @@ self.color_labels = {
             35: ("mulch", "#8000ff"), 36: ("gravel", "#808080")
         }
 ```
+The format is as follows; 
+```
+label_id:("label","Hex color code")
+```
