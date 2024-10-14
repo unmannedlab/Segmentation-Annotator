@@ -173,6 +173,7 @@ class SuperpixelGUI:
             image_path = self.image_paths[index]
             self.image_name = image_path
             self.original_image = Image.open(image_path)  # Store the original opened image
+            self.org_np = np.asarray(self.original_image)
             self.org_image = self.original_image.resize((960, 720))
             self.image = self.original_image.resize((960, 720))  # Resize the image to fit in the canvas
             self.np_image = np.asarray(self.image)
@@ -650,7 +651,7 @@ class SuperpixelGUI:
         os.makedirs(labels_folder, exist_ok=True)
         gray_save_path = os.path.join(labels_folder, os.path.basename(self.image_name))
         #gray_array = self.get_gray_array()
-        cv2.imwrite(gray_save_path, cv2.resize(self.label_hist, (1440,1080), interpolation=cv2.INTER_NEAREST))
+        cv2.imwrite(gray_save_path, cv2.resize(self.label_hist, (self.org_np.shape[1],self.org_np.shape[0]), interpolation=cv2.INTER_NEAREST))
 
         #removing the image from work folder
         os.remove(self.image_name)
@@ -666,7 +667,7 @@ class SuperpixelGUI:
             label_color = self.color_labels[label_id][1]
             labeled_image[mask] = tuple(int(label_color[i:i + 2], 16) for i in (1, 3, 5))
         if event:
-            labeled_image = cv2.resize(labeled_image, (1440,1080),interpolation=cv2.INTER_NEAREST)
+            labeled_image = cv2.resize(labeled_image, (self.org_np.shape[1],self.org_np.shape[0]),interpolation=cv2.INTER_NEAREST)
         else:
             labeled_image = cv2.resize(labeled_image, (960,720),interpolation=cv2.INTER_NEAREST)
         return Image.fromarray(labeled_image)
