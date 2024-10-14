@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/f53c23f6-0f35-46b2-ba8b-2936869aa97c
     ```bash
     cd segment-anything; pip install -e .
     ```
-Download the [SAM checkpoint](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and update the path in gui.py
+Download the [SAM checkpoint](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and update the path in [gui.py](./gui.py) Line:50.
 
 ## Usage
 
