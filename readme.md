@@ -56,7 +56,7 @@ To annotate your custom dataset with your own custom labels, please refer to [cu
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. 
-
+##### Contact: kasiv@tamu.edu
 ### We will release a new update with the integration of SAM 2 for faster video annotations. Stay tuned!
 
 ## License
