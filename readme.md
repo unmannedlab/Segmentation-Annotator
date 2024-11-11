@@ -36,6 +36,8 @@ https://github.com/user-attachments/assets/f53c23f6-0f35-46b2-ba8b-2936869aa97c
     ```
 Download the [SAM checkpoint](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and update the path in [gui.py](./gui.py) Line:50.
 
+#### If you are facing issues with generating SAM prompts/rectangles due to computation constraints. Please use the SAM base model [SAM-base](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) for faster SAM inference.
+
 ## Usage
 
 1. Run the annotator tool:
