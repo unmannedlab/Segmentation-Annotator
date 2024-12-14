@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/f53c23f6-0f35-46b2-ba8b-2936869aa97c
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/kasiv008/Segmentation-annotator.git
+    git clone https://github.com/unmannedlab/Segmentation-annotator.git
     ```
 
 2. Install the required dependencies: 
